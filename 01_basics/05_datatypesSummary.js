@@ -40,6 +40,30 @@
         const anotherId = Symbol('123');
         //console.log(id === anotherId) // returns false
         console.log(typeof id)
+
+
+    // Stack is used for primitive datatypes and Heap is used for Non primitive data types
+
+    let myYoutubeName = "TirthPateldotcom"
+
+    let anotherName = myYoutubeName
+    anotherName = "chaiaurCode"
+
+    console.log(myYoutubeName)
+    console.log(anotherName)
+
+    let userOne = {
+        email: "user@google.com",
+        upiId: "user@ybl"
+    }
+
+    let userTwo = userOne
+
+    userTwo.email = "tirth@google.com"
+
+    console.log(userOne.email)
+    console.log(userTwo.email)
+    
     
 
 
