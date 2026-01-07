@@ -28,5 +28,28 @@ function loginUserMessage(username="Sam") // default value
 
 // console.log(loginUserMessage()); if i  didn't pass anything it will show underfined just logged in
 
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+function calculateCartPrice(val1, val2,...num1)
+{
+    return num1;
+}
+// console.log(calculateCartPrice(1,200,300,400));
+
+const user = {
+    username: "Tirth",
+    price: 199,
+}
+
+function handleObject(anyObject)
+{
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+// handleObject(user);
+handleObject({
+    username: "Sam",
+    price: 699
+})
+
 
