@@ -43,4 +43,4 @@ const addTwo = (num1,num2) => {
 // const addTwo = (num1,num2) => ({username: "Tirth"}) // this is how you return object
 console.log(addTwo(4,5));
 
-console.log(add)
+// console.log(add)
