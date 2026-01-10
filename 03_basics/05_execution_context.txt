@@ -1,0 +1,56 @@
+// Javascript Execution Context
+
+1) {} -> Global Execution context -> For browser global ec would be window object
+
+2) Function Execution context
+
+3) Eval Execution context
+
+4 ) Code execution process
+
+    code eg 
+    let val1 = 10
+    let val2 = 5
+    function addNum(num1, num2)
+    {
+        let total = num1 + num2;
+        return total;
+    }
+
+    let result1 = addNum(val1,val2);
+    let resul2 = addNum(10,2)
+
+    i. Global execution -> it allocates under this 
+
+    ii. Memory Creation phase -> memory allocation to all the variable just put them in memories
+        step 1 - val1 -> undefined
+        step 2 - val2 -> undefined
+        stpe 3 - addnum -> defination
+        step-4 - result1 -> undefined
+        stpe-5 - result2 -> undefined  
+
+    iii. Execution phase
+        step 1 - val1 <- 10
+        step 2 - val2 <- 5
+        step 3 addNum - > new variable environment + execution thread
+            - again memory creation phase
+                . val1 -> undefined
+                . val2 -> undefined
+                . total -> undefined
+            - again execution context phase
+                . nums1 <- 10
+                . nums2 <- 5
+                . total <- 15
+            - Deleted this new variable environment + execution thread
+        step4 result1 <- 15
+        step5 result2 -> addNum -> new variable environment + execution thread
+            - again memory creation phase 
+                . val1 -> undefined
+                . val2 -> undefined
+                . total -> undefined
+             - again execution context phase
+                . nums1 <- 10
+                . nums2 <- 2
+                . total <- 12
+        setp6 - result2 <- 12
+            
